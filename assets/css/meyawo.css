@@ -57,9 +57,16 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+@font-face {
+  font-family: 'balsam';
+  src: url(Balsam-Bold.ttf);
+}
+#strength {font-family: 'balsam';}
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
+
 
 body {
   margin: 0;
@@ -272,8 +279,7 @@ select {
 button,
 [type="button"],
 [type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
+[type="submit"] {-webkit-appearance: button;
 }
 
 button:not(:disabled),
