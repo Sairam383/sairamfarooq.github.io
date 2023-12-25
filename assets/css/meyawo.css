@@ -12238,3 +12238,7 @@ pre .code {
 .section-lg {
   padding: 100px 0 !important;
 }
+
+.portfolio-card-img {
+  opacity: 0.8;
+}
