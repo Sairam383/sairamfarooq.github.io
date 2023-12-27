@@ -395,6 +395,11 @@
         </footer>
     </div> <!-- end of page footer -->
 
+    <button id="scrollToTopBtn" class="btn btn-outline-primary rounded" onclick="scrollToTop()">
+        ⬆
+    </button>
+
+
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
@@ -404,6 +409,28 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+
+    <script>
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        // Show/hide the scroll-to-top button based on scroll position
+        window.onscroll = function () {
+            var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+    </script>
+
+
 
 </body>
 

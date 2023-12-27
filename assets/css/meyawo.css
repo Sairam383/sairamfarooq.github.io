@@ -12242,3 +12242,12 @@ pre .code {
 .portfolio-card-img {
   opacity: 0.8;
 }
+
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
